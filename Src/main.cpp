@@ -66,6 +66,8 @@ int main(int argc, char* argv[]) {
     qRegisterMetaType<playerParameters*>("playerParameters*");
 	qRegisterMetaType<CameraConfiguration>("CameraConfiguration");
     qRegisterMetaTypeStreamOperators<QList<IModelTrackedComponent*>>("QList<IModelTrackedComponent*>");
+    qRegisterMetaType<QFileInfo>("QFileInfo");
+    qRegisterMetaType<std::string>("std::string");
     
     //qInstallMessageHandler(myMessageOutput);
 
